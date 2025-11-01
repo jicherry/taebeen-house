@@ -1,0 +1,273 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.full {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  max-width: 100%;
+}
+
+.row a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.green-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.green-bg img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.green-bg:hover .overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.green-bg:hover .arrow i {
+  color: #fff;
+  background-color: #ed6d00;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow i {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.25rem 0.45rem;
+  color: #000;
+  font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+  .full {
+    display: block;
+  }
+
+  .img-wrap {
+    height: 150px;
+    overflow: hidden;
+    margin: 0.3rem;
+  }
+
+  .img-wrap img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .row {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+}
+
+/* 온실 인트로 */
+
+.greenhouse_intro .container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.greenhouse_intro .green-wrap img {
+  height: 22rem;
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+
+.chosen {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.arrow .chosen_i {
+  color: #fff;
+  background-color: #ed6d00;
+}
+
+@media (max-width: 991px) {
+  .greenhouse_intro .container {
+    display: block;
+    height: auto;
+  }
+
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .row > div {
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* 벤로 고급형 */
+
+.greenhouse_wrap h2 {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.greenhouse_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.greenhouse_main_img {
+  width: 50rem;
+}
+
+.greenhouse_main_img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.textbox {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #dddddd;
+}
+
+.textbox h3 {
+  padding-left: 0;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.textbox ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.textbox li {
+  padding-top: 1.7rem;
+  display: flex;
+}
+
+.textbox li span:first-child {
+  display: inline-block;
+  width: 8.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.textbox span {
+  color: #565656;
+}
+
+.textbox .red {
+  color: #ec2c2c;
+  font-weight: bold;
+}
+
+.greenhouse_sub {
+  margin-top: 5rem;
+}
+
+.greenhouse_sub ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -0.5rem;
+}
+
+.greenhouse_sub ul li {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.greenhouse_sub ul li img {
+  width: 100%;
+}
+
+.greenhouse_sub_bottom {
+  display: flex;
+  width: calc(100% / 2);
+}
+
+.greenhouse_sub_bottom div img {
+  width: 50%;
+}
+
+.greenhouse_sub li p {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn_wrap {
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn_wrap a {
+  display: inline-block;
+  background-color: #0074e4;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 30rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+@media (max-width: 599px) {
+  .greenhouse_item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .greenhouse_sub ul li {
+    width: calc(100% / 2);
+  }
+
+  .greenhouse_main_img {
+    width: 100%;
+  }
+
+  .greenhouse_main_img img {
+    width: 100%;
+    height: auto;
+  }
+}
