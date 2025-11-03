@@ -3,61 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>태빈바이오</title>
     <link rel="stylesheet" href="intro.css" />
+    <link rel="stylesheet" href="../greenhouse/greenhouse.css" />
+    <link rel="stylesheet" href="../header.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
+    <div class="header_container">
+      <header class="header_btn">
+        <div class="menu-btn" id="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+      <a href="../index.html" class="main_logo">
+        <i class="fa-solid fa-seedling">B</i>
+      </a>
+    </div>
+
+    <nav class="menu-overlay" id="menu-overlay">
+      <ul>
+        <li><a href="intro.html">상품개요</a></li>
+        <li><a href="#">시공사례</a></li>
+      </ul>
+    </nav>
+    <div class="header_wrap">
+      <img src="../img/header_img.jpg" alt="" />
+      <p>The Future of Agricultural Tech. <br />TAEBEEN BIO STRUCTURE</p>
+    </div>
+
     <div class="container full">
       <div class="row">
         <div class="col-12 col-lg-3">
-          <a href="greenhouse_intro.html">
-            <div class="img-wrap bg">
+          <a href="../greenhouse/greenhouse_intro.html">
+            <div class="img-wrap green-bg">
               <img src="../img/intro1.jpg" alt="" class="img-fluid" />
               <div class="overlay"></div>
               <div class="arrow">
-                온실종류<span><i class="xi-angle-right"></i></span>
+                <span>온실종류</span><span><i class="fa-solid fa-chevron-right"></i></span>
               </div>
             </div>
           </a>
         </div>
         <div class="col-12 col-lg-3">
-          <a href="business_intro.html">
-            <div class="img-wrap bg">
+          <a href="../business/business_intro.html">
+            <div class="img-wrap green-bg">
               <img src="../img/intro2.jpg" alt="" class="img-fluid" />
               <div class="overlay"></div>
-            <div class="arrow">자재사업부<span></span></div>
+            <div class="arrow">
+              <span>자재사업부</span><span><i class="fa-solid fa-chevron-right"></i></span></div>
           </a>
             </div>
             
         </div>
         <div class="col-12 col-lg-3">
           <a href="#">
-            <div class="img-wrap bg">
+            <div class="img-wrap green-bg">
               <img src="../img/intro3.jpg" alt="" class="img-fluid" />
               <div class="overlay"></div>
-              <div class="arrow">스마트카페<span></span></div>
+              <div class="arrow">
+                <span>스마트카페</span><span><i class="fa-solid fa-chevron-right"></i></span></div>
             </div>
             
           </a>
         </div>
         <div class="col-12 col-lg-3">
-          <a href="conditioner.html">
-            <div class="img-wrap bg">
+          <a href="../conditioner/conditioner.html">
+            <div class="img-wrap green-bg">
               <img src="../img/intro4.png" alt="" class="img-fluid" />
               <div class="overlay"></div>
-              <div class="arrow">냉난반기<span></span></div>
+              <div class="arrow">
+                <span>냉난반기</span><span><i class="fa-solid fa-chevron-right"></i></span></div>
             </div>
           </a>
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../index.js"></script>
+    <script src="../greenhouse/greenhouse.js"></script>
+
   </body>
 </html>

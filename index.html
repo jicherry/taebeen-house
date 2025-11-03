@@ -3,23 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swiper Fullpage Scroll</title>
+    <title>태빈바이오</title>
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="header.css" />
   </head>
   <body>
+    <div class="header_container">
+      <header class="header_btn">
+        <div class="menu-btn" id="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+      <a href="../index.html" class="main_logo">
+        <i class="fa-solid fa-seedling">B</i>
+      </a>
+    </div>
+    <nav class="menu-overlay" id="menu-overlay">
+      <ul>
+        <li><a href="intro/intro.html">상품개요</a></li>
+        <li><a href="#">시공사례</a></li>
+      </ul>
+    </nav>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide slide1">Section 1</div>
-        <div class="swiper-slide slide2">Section 2</div>
-        <div class="swiper-slide slide3">Section 3</div>
-        <div class="swiper-slide slide4">Section 4</div>
+        <div class="swiper-slide slide1">
+          <video autoplay muted loop playsinline>
+            <source src="img/main_video.mp4" type="video/mp4" />
+            브라우저가 동영상을 지원하지 않습니다.
+          </video>
+          <div class="overlay">
+            <h4>
+              The Future of Agricultural Tech.<br />
+              <span>TAEBEEN BIO</span> STRUCTURE
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-slide slide2">
+          <img src="img/main_bg1.jpg" alt="" />
+          <div class="overlay">
+            <h4>상품개요</h4>
+            <a href="intro/intro.html">
+              <p>바로가기</p>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide slide3">
+          <img src="img/main_bg2.jpg" alt="" />
+          <div class="overlay">
+            <h4>시공현장</h4>
+            <p>바로가기</p>
+          </div>
+        </div>
+        <div class="swiper-slide slide4">
+          <img src="img/main_bg3.jpg" alt="" />
+          <div class="overlay">
+            <p>
+              혁신 시공기술의 선두주자<br /><strong
+                >태빈바이오가 함께합니다!</strong
+              >
+            </p>
+          </div>
+        </div>
       </div>
 
+      <!-- 페이지네이션 -->
       <div class="swiper-pagination"></div>
     </div>
 

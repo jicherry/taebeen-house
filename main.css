@@ -1,40 +1,162 @@
 html,
 body {
-  height: 100%;
   margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Pretendard", sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Swiper 기본 레이아웃 */
+
 .swiper {
   width: 100%;
   height: 100vh;
 }
+
 .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
   color: #fff;
-  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-/* 각 섹션 색상 */
-.slide1 {
-  background: #1abc9c;
+/* 동영상 배경 */
+
+.slide1 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
-.slide2 {
-  background: #3498db;
+
+/* 이미지 위 텍스트 */
+
+.slide1 .overlay {
+  position: relative;
+  z-index: 20;
+  text-align: center;
 }
+
+.slide1 .overlay span {
+  color: #66c7ff;
+}
+
+.slide2 img,
+.slide3 img,
+.slide4 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.slide2 .overlay,
+.slide3 .overlay,
+.slide4 .overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.slide1::before,
+.slide2::before,
+.slide3::before,
+.slide4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.slide2 .overlay h4,
+.slide3 .overlay h4 {
+  margin-bottom: 2rem;
+}
+
+.slide2 .overlay p,
+.slide3 .overlay p {
+  padding: 0.7rem 0.7rem;
+  border: 2px solid #fff;
+  border-radius: 30rem;
+  font-size: 1.3rem;
+}
+
+.slide2 .overlay p:hover,
+.slide3 .overlay p:hover {
+  background-color: #e67e22;
+  border: 2px solid #e67e22;
+  transition: 0.3s;
+}
+
 .slide3 {
-  background: #9b59b6;
 }
 .slide4 {
-  background: #e67e22;
 }
 
-/* 페이지네이션 점 스타일 */
 .swiper-pagination-bullet {
+  border-radius: 30rem;
   background: rgba(255, 255, 255, 0.7);
   opacity: 1;
+  transition: 0.3s;
 }
 .swiper-pagination-bullet-active {
   background: #fff;
+}
+
+.swiper-slide .overlay {
+  transform: translateY(2rem);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* 텍스트 애니메이션 */
+.swiper-slide .overlay {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.swiper-slide .overlay.slide-in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* 모바일 */
+
+@media (max-width: 599px) {
+  .slide1 .overlay {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .slide2 .overlay h4,
+  .slide3 .overlay h4 {
+    font-size: 1.7rem;
+  }
+
+  .slide2 .overlay p,
+  .slide3 .overlay p {
+    padding: 0.7rem 0.9rem;
+    font-size: 1rem;
+  }
+
+  .slide4 p {
+    font-size: 1.5rem;
+  }
 }
