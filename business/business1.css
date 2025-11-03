@@ -1,0 +1,13 @@
+.full {
+  justify-content: center;
+}
+
+.business_intro .row {
+  max-width: 950px;
+}
+
+.business-wrap img {
+  width: 100%;
+}
+
+/* 모바일 */

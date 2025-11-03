@@ -72,30 +72,6 @@ body {
   font-size: 1rem;
 }
 
-@media (max-width: 991px) {
-  .full {
-    display: block;
-  }
-
-  .img-wrap {
-    height: 150px;
-    overflow: hidden;
-    margin: 0.3rem;
-  }
-
-  .img-wrap img {
-    height: 150px;
-    object-fit: cover;
-  }
-
-  .row {
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-  }
-}
-
-/* 온실 인트로 */
-
 .greenhouse_intro .container {
   display: flex;
   align-items: center;
@@ -117,26 +93,6 @@ body {
   color: #fff;
   background-color: #ed6d00;
 }
-
-@media (max-width: 991px) {
-  .greenhouse_intro .container {
-    display: block;
-    height: auto;
-  }
-
-  .row {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .row > div {
-    margin-bottom: 1rem;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-/* 벤로 고급형 */
 
 .greenhouse_wrap h2 {
   text-align: center;
@@ -250,6 +206,74 @@ body {
   border-radius: 30rem;
   text-decoration: none;
   font-size: 1rem;
+}
+
+.footer_wrap {
+  width: 100%;
+  background-color: #2e2e2e;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.footer_top p {
+  font-weight: 550;
+  font-size: 1rem;
+  transform: translateY(0.5rem);
+  padding: 1rem 5rem;
+}
+
+.footer_bottom {
+  border-top: 1px solid #565656;
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.footer_bottom p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 1rem 5rem;
+}
+
+/* 모바일 */
+
+@media (max-width: 991px) {
+  .full {
+    display: block;
+  }
+
+  .img-wrap {
+    height: 150px;
+    overflow: hidden;
+    margin: 0.3rem;
+  }
+
+  .img-wrap img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .row {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+
+  .greenhouse_intro .container {
+    display: block;
+    height: auto;
+  }
+
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .row > div {
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 599px) {

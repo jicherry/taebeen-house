@@ -72,6 +72,17 @@ body {
   font-size: 1rem;
 }
 
+.chosen {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.arrow .chosen_i {
+  color: #fff;
+  background-color: #ed6d00;
+}
+
+/* 모바일 */
+
 @media (max-width: 991px) {
   .full {
     display: block;
@@ -94,11 +105,7 @@ body {
   }
 }
 
-.chosen {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.arrow .chosen_i {
-  color: #fff;
-  background-color: #ed6d00;
+@media (max-width: 575.98px) {
+  .footer_wrap {
+  }
 }
