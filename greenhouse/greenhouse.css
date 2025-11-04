@@ -195,7 +195,7 @@ body {
 
 .btn_wrap {
   text-align: center;
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .btn_wrap a {
@@ -293,5 +293,14 @@ body {
   .greenhouse_main_img img {
     width: 100%;
     height: auto;
+  }
+
+  .footer_wrap {
+    margin-top: 3.5rem;
+  }
+
+  .footer_top p,
+  .footer_bottom p {
+    padding: 1rem 1rem !important;
   }
 }

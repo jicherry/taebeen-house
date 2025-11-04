@@ -106,6 +106,16 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .row div {
+    margin: 0;
+  }
+
   .footer_wrap {
+    margin-top: 3.5rem;
+  }
+
+  .footer_top p,
+  .footer_bottom p {
+    padding: 1rem 1rem !important;
   }
 }

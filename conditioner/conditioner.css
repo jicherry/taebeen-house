@@ -1,0 +1,12 @@
+/* 모바일 */
+
+@media (max-width: 599px) {
+  .footer_wrap {
+    margin-top: 3.5rem;
+  }
+
+  .footer_top p,
+  .footer_bottom p {
+    padding: 1rem 1rem !important;
+  }
+}
