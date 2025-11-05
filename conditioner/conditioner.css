@@ -1,3 +1,46 @@
+.conditioner_title {
+  margin-top: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conditioner_title h5 {
+  color: #979797;
+  font-weight: 550;
+  font-size: 0.9rem;
+}
+
+.conditioner_title h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.conditioner_title p {
+  color: #252525;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+
+.conditioner_main {
+  width: 100%;
+}
+
+.conditioner_main img {
+  width: 100%;
+}
+
+.conditioner_sub {
+  display: flex;
+  width: calc(100% / 3);
+  padding: 2rem 0;
+}
+
+.conditioner_sub img {
+  width: 100%;
+}
+
 /* 모바일 */
 
 @media (max-width: 599px) {
