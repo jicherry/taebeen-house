@@ -33,12 +33,13 @@
 
 .conditioner_sub {
   display: flex;
-  width: calc(100% / 3);
+  justify-content: space-between;
   padding: 2rem 0;
+  width: 100%;
 }
 
 .conditioner_sub img {
-  width: 100%;
+  width: calc(33.333% - 15px);
 }
 
 /* 모바일 */
