@@ -126,6 +126,21 @@
     height: 11.6rem;
   }
 
+  .business_item {
+    flex-direction: column;
+  }
+
+  .business_item img,
+  .business_item .etc_ul
+  {
+    width: 100%;
+  }
+
+  .business_item .etc_ul {
+    align-items: flex-start;
+    padding-left: 0.5rem;
+  }
+
   .footer_wrap {
     margin-top: 3.5rem;
   }
@@ -134,4 +149,6 @@
   .footer_bottom p {
     padding: 1rem 1rem !important;
   }
+
+
 }
