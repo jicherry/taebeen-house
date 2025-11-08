@@ -39,7 +39,7 @@
 }
 
 .conditioner_sub img {
-  width: calc(33.333% - 15px);
+  width: calc(33.333% - 10px);
 }
 
 /* 모바일 */
