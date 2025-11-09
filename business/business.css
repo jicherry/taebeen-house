@@ -120,6 +120,11 @@
 @media (max-width: 599px) {
   .container {
     display: block;
+    padding: 0;
+  }
+
+  .row {
+    padding-bottom: 0;
   }
 
   .business-wrap {
@@ -142,7 +147,7 @@
   }
 
   .footer_wrap {
-    margin-top: 3.5rem;
+    margin-top: 0;
   }
 
   .footer_top p,
