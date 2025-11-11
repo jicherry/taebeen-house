@@ -45,6 +45,19 @@
 /* 모바일 */
 
 @media (max-width: 599px) {
+
+  .conditioner_title h5 {
+    font-size: 0.7rem;
+  }
+
+  .conditioner_title h3 {
+    font-size: 1.3rem;
+  } 
+
+  .conditioner_title p {
+    font-size: 0.7rem;
+  }
+
   .footer_wrap {
     margin-top: 3.5rem;
   }
@@ -54,3 +67,4 @@
     padding: 1rem 1rem !important;
   }
 }
+

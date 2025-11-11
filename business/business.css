@@ -1,9 +1,13 @@
 .container {
   max-width: 900px !important;
-  padding: 9.9rem;
+  padding-top: 9.9rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.bottom {
+  padding-bottom: 9.3rem;
 }
 
 .business_wrap h3 {
@@ -13,7 +17,7 @@
 }
 
 .business_wrap {
-  margin-top: -10rem;
+  /* margin-top: -10rem; */
 }
 
 .business_top,
@@ -61,7 +65,7 @@
 }
 
 .btn_wrap {
-  margin-top: -10.5rem;
+  /* margin-top: -10.5rem; */
 }
 
 /* 기타자재들 */

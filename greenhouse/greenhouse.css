@@ -169,6 +169,7 @@ body {
   width: calc(100% / 3);
   box-sizing: border-box;
   padding: 0.5rem;
+  
 }
 
 .greenhouse_sub ul li img {
@@ -191,6 +192,7 @@ body {
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .btn_wrap {
@@ -256,7 +258,7 @@ body {
 
   .row {
     padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    /* padding-bottom: 1.3rem; */
   }
 
   .greenhouse_intro .container {
@@ -277,6 +279,10 @@ body {
 }
 
 @media (max-width: 599px) {
+  .greenhouse_title {
+    margin-top: 3rem;
+  }
+
   .greenhouse_item {
     display: flex;
     flex-direction: column;
@@ -296,7 +302,6 @@ body {
   }
 
   .footer_wrap {
-    margin-top: 3.5rem;
   }
 
   .footer_top p,
