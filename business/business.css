@@ -64,9 +64,6 @@
   height: auto;
 }
 
-.btn_wrap {
-  /* margin-top: -10.5rem; */
-}
 
 /* 기타자재들 */
 
@@ -148,6 +145,11 @@
   .business_item .etc_ul {
     align-items: flex-start;
     padding-left: 0.5rem;
+  }
+
+  .btn_wrap a {
+    padding: 0.5rem 1.3rem;
+    font-size: 0.9rem;
   }
 
   .footer_wrap {

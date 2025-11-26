@@ -1,5 +1,9 @@
 /* 메뉴 버튼 */
 
+* {
+  font-family: "Google Sans Flex", sans-serif;
+}
+
 .header_btn {
   position: fixed;
   top: 25px;
@@ -77,7 +81,7 @@
   transition: 0.3s;
 }
 
-.menu-overlay a::after {
+/* .menu-overlay a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -90,7 +94,7 @@
 
 .menu-overlay a:hover::after {
   width: 100%;
-}
+} */
 
 /* 헤더 이미지 */
 
